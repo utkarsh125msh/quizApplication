@@ -1,0 +1,7 @@
+there is [quiz table] and [question table](entity)
+
+need to map both 
+
+1 to 1 -> 1 quiz 1 question
+1 to many -> 1 quiz can have many question but no ques will repeat in any quiz...
+many to many -> 1 quiz can have many ques and ques can repeat question too...

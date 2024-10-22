@@ -1,0 +1,18 @@
+
+Sql queries--> need to write this query if an inbuilt function is not present 
+
+IN DAO LAYER------------------------------------------------------
+Native Queries --> @Query(value= "", nativeQuery=true) anotation from data jpa
+
+                1.  value = "SELECT * FROM entity q WHERE q.topicName=:{} ORDER BY RANDOM() LIMIT :{}"
+                    INSIDE {} USE VARIABLE
+
+                3.  @Query(value = "SELECT * FROM entity q WHERE q.topic_name = :{topicName}  ORDER BY RANDOM() LIMIT :{noOfQues}, nativeQuery = true)
+        List<entity> findRandomQuestionByCategory(@Param("noOfQues") int noOfQues, @Param("topicName") String topicName);
+  
+
+
+
+                3.     @Query(value = "SELECT * FROM entity q WHERE q.topic_name = ?2 ORDER BY RANDOM() LIMIT ?1", nativeQuery = true)
+        List<entity> findRandomQuestionByCategory(@Param("noOfQues") int noOfQues, @Param("topicName") String topicName);
+  
