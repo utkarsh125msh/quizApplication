@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/Quiz")
+        @CrossOrigin(origins = "https://quiz-app2024.vercel.app") // Replace with your frontend URL
+
 public class QuizController {
     @Autowired
     QuizSrevice quizService;
