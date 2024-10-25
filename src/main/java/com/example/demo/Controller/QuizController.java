@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/Quiz")
+<<<<<<< HEAD
+=======
+@CrossOrigin(origins = "https://quiz-app2024.vercel.app") // Replace with your frontend URL
+>>>>>>> dd73cd6 (25/10/24  2nd commit CORS)
 
 public class QuizController {
     @Autowired
