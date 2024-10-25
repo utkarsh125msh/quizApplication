@@ -14,14 +14,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.CrossOrigin;
-
 
 
 @RestController
 @RequestMapping("Question")
-@CrossOrigin(origins = "https://quiz-app2024.vercel.app") // Replace with your frontend URL
-
 public class QuesController {
     
     @Autowired
